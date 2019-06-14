@@ -1,4 +1,5 @@
 # tip-calculator
+
 Coding Bootcamp Challenge
 
 ## Rules and Guideline to the Challenge
@@ -12,5 +13,14 @@ will be provided, so you are free to construct this however you would like. Howe
 - The application should then calculate the amount of tip per table (or per person if the split option is chosen) and return that value to the user.
 
 #### BONUS:
-  - Create a simple UI so that this can be used in a browser
-  - Deploy to your favorite hosting service (Heroku, Netlify, etc.)
+
+- Create a simple UI so that this can be used in a browser
+- Deploy to your favorite hosting service (Heroku, Netlify, etc.)
+
+# Development Notes
+
+#### Libraries
+
+- jQuery for quick and easy scripting
+- font-awesome (which is now a library) for icons
+- google fonts for styling

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/cc042c3aeb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="form-box">
+        <header>Tip Calculator</header>
+        <form id="tip-calculator-form">
+          <label for="bill-amount">Bill Amount: </label>
+          <input type="text" name="bill-amount" id="bill-amount" placeholder="$32.54" required />
+          <label for="tip-percentage">Desired Tip Percentage: </label>
+          <input type="text" name="tip-percentage" id="tip-percentage" placeholder="20%" />
+          <input type="checkbox" name="split-tip-option" id="split-tip-option" />&nbsp; split the tip
+          <input type="number" name="split-by-value" id="split-by-value" placeholder="0" />
+        </form>
+      </div>
+      <div id="result">
+        <header>Your calculated tip and bill total</header>
+      </div>
+    </div>
+  </body>
+</html>
