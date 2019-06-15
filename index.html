@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/cc042c3aeb.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -19,11 +18,9 @@
         <p>Desired Tip Percentage</p>
         <input type="text" name="tip-percentage" id="tip-percentage" placeholder="20%" />
         <div class="split-tip-options">
-          <div class="checkbox-container">
-            <div id="inner-checkbox" class="checkbox"></div>
-          </div>
+          <div class="checkbox-container flex-column align-center "></div>
           <span class="checkbox-label">split the tip</span>
-          <input type="number" name="split-by-value" id="split-by-value" class="number" placeholder="2" />
+          <input type="number" name="split-by-value" id="split-by-value" class="number" placeholder="2" disabled />
         </div>
       </div>
       <div id="result-box" class="flex-column align-center align-start">
@@ -33,5 +30,6 @@
         </div>
       </div>
     </div>
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>
