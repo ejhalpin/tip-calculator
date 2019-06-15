@@ -6,23 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/cc042c3aeb.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div id="form-box">
+    <div class="container flex-column align-center align-start">
+      <div id="form-box" class="flex-column align-center">
         <header>Tip Calculator</header>
-        <form id="tip-calculator-form">
-          <label for="bill-amount">Bill Amount: </label>
-          <input type="text" name="bill-amount" id="bill-amount" placeholder="$32.54" required />
-          <label for="tip-percentage">Desired Tip Percentage: </label>
-          <input type="text" name="tip-percentage" id="tip-percentage" placeholder="20%" />
-          <input type="checkbox" name="split-tip-option" id="split-tip-option" />&nbsp; split the tip
-          <input type="number" name="split-by-value" id="split-by-value" placeholder="0" />
-        </form>
+        <p>Bill Amount</p>
+        <input type="text" name="bill-amount" id="bill-amount" placeholder="$32.54" required />
+        <p>Desired Tip Percentage</p>
+        <input type="text" name="tip-percentage" id="tip-percentage" placeholder="20%" />
+        <div class="split-tip-options">
+          <div class="checkbox-container">
+            <div id="inner-checkbox" class="checkbox"></div>
+          </div>
+          <span class="checkbox-label">split the tip</span>
+          <input type="number" name="split-by-value" id="split-by-value" class="number" placeholder="2" />
+        </div>
       </div>
-      <div id="result">
+      <div id="result-box" class="flex-column align-center align-start">
         <header>Your calculated tip and bill total</header>
+        <div id="result">
+          <!-- pin card(s) here which detail the bill amount and calculated tip -->
+        </div>
       </div>
     </div>
   </body>
